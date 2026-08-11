@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Box</title>
+</head>
+<body>
+  <h1>Recipe Box</h1>
+
+  <nav>
+    <strong>Mains</strong>
+    <span> | Sides | Sweets | Basics | Unsorted</span>
+  </nav>
+
+  <h2>Mains</h2>
+
+  {{#each recipes}}
+    <p>
+      <a href="/recipe/{{_id}}">{{title}}</a>
+    </p>
+  {{/each}}
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{recipe.title}} | Recipe Box</title>
+</head>
+<body>
+  <p><a href="/">← Recipe Box</a></p>
+
+  <h1>{{recipe.title}}</h1>
+
+  <nav>
+    <strong>Ingredients</strong>
+    <span> | Instructions | Notes</span>
+  </nav>
+
+  <h2>Ingredients</h2>
+
+  <ul>
+    {{#each recipe.ingredients}}
+      <li>{{item}}</li>
+    {{/each}}
+  </ul>
+</body>
+</html>
